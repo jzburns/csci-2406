@@ -11,6 +11,10 @@ const int sz = 6;
 unsigned array[ sz ] = { 9, 2, 3, 4, 8, 1 };
 unsigned someValue = 55;
 
+// we can think of someValue not as an unsigned in
+// but as the first element in an array of unsigned ints
+unsigned someValueInArrayForm[1] = { 55 };
+
 int main (int argc, char** argv) {
 
 	// we will use a pointer
