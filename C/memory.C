@@ -1,3 +1,10 @@
+// to compile: gcc memory.C -o memory
+// to run: ./memory
+
+// this code demonstrates the use of
+// global data, arrays, pointers, pointer arithmetic
+// accessing memory beyond the allocated space
+
 #include <stdio.h>
 
 const int sz = 6;
