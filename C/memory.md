@@ -15,25 +15,25 @@ unsigned someValue = 55;
 unsigned someValueInArrayForm[1] = { 55 };
 
 int main (int argc, char** argv) {
-  unsigned* p = array;
+	unsigned* p = array;
 
-  // update the 3rd value of the array
-  p += 3;
-  *p = 99;
-  printf("the 3rd element is is %u \n", *p);
+	// update the 3rd element of the array
+	p += 3;
+	*p = 99;
+	printf("the 3rd element is is %u \n", *p);
 
-  // use the pointer to 
-  // access / modify the integer someValue;
-  printf("someValue is %u \n", someValue);
-  p = &someValue;
-  *p = 123;
-  printf("now someValue is %u\n", someValue);
+	// use the pointer to access / modify the integer someValue;
+	printf("someValue is %u \n", someValue);
+	p = &someValue;
+	*p = 123;
+	printf("now someValue is %u\n", someValue);
 
-  // but what does this do?
-  p += 256;
-  *p = 333;
-  return 0;
-}
+	// but what does this do?
+	p += 256;
+	*p = 333;
+
+	return 0;
+}    
 ```
 1. Place the code into a file called ``memory.C``,
 2. Compile it using: ``gcc memory.C -o memory``
