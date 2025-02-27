@@ -4,7 +4,6 @@
 // this code demonstrates the use of
 // global data, arrays, pointers, pointer arithmetic
 // accessing memory beyond the allocated space
-
 #include <stdio.h>
 
 const int sz = 6;
@@ -20,8 +19,7 @@ int main (int argc, char** argv) {
 	*p = 99;
 	printf("the 3rd element is is %u \n", *p);
 
-	// use the pointer to 
-	// access / modify the integer someValue;
+	// use the pointer to access / modify the integer someValue;
 	printf("someValue is %u \n", someValue);
 	p = &someValue;
 	*p = 123;
