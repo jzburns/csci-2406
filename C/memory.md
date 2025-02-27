@@ -35,4 +35,7 @@ int main (int argc, char** argv) {
   return 0;
 }
 ```
-As you can see
+1. Place the code into a file called ``memory.C``,
+2. Compile it using: ``gcc memory.C -o memory``
+3. Run it: ``./memory``
+
