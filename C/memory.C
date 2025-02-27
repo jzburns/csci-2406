@@ -14,7 +14,7 @@ unsigned someValueInArrayForm[1] = { 55 };
 int main (int argc, char** argv) {
 	unsigned* p = array;
 
-	// update the 3rd value of the array
+	// update the 3rd element of the array
 	p += 3;
 	*p = 99;
 	printf("the 3rd element is is %u \n", *p);
