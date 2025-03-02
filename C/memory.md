@@ -19,7 +19,7 @@ int main (int argc, char** argv) {
 
 	// update the 3rd element of the array
 	p += 3;
-	*p = 99;
+	*p += 10;
 	printf("the 3rd element is is %u \n", *p);
 
 	// use the pointer to access / modify the integer someValue;
