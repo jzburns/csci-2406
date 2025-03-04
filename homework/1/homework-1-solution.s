@@ -1,8 +1,8 @@
-/ ** 
-  * homework-1-solution.s
-  * this is one possible solution
-  * showing some of the important topics
-  */
+/* 
+ * homework-1-solution.s
+ * this is one possible solution
+ * showing some of the important topics
+ */
 
 .global _start
 _start:
@@ -18,4 +18,4 @@ loop:
   addne r0, #2
   bne loop
   svc #2
-  
+
