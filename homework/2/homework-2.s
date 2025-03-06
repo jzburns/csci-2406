@@ -2,7 +2,7 @@
 _start:
 	// load the test case string here
 	bl to_upper
-	bl to_lower
+	//bl to_lower
 
 to_upper:
 
