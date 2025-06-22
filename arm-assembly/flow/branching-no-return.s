@@ -1,5 +1,5 @@
-.global _start
-_start:
+.global main
+main:
 	mov r0, #5
 	mov r1, #8
 	cmp r0, r1

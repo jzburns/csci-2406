@@ -1,5 +1,5 @@
-.global _start
-_start:
+.global main
+main:
 	ldr r0, =array1
 	mov r1, #0
 	mov r2, #0

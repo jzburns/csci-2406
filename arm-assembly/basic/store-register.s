@@ -1,5 +1,5 @@
-.global _start
-_start:
+.global main
+main:
   	mov r3, #100
 	ldr r0, =vector
 	ldr r1, [r0]
