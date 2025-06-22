@@ -38,7 +38,7 @@ int main (int argc, char** argv) {
 	*p = 333;
 
 	// test the function
-  int ret = afunction(4, 9);
+	int ret = afunction(4, 9);
 	printf("function return val is %d\n", ret);
 
 	return 0;
