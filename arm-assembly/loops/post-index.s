@@ -9,6 +9,8 @@ loop:
 	bge end
 	ldr r3, [r0, r1]
 	add r3, r3, #10 
+	// save r3 on the stack too
+	push { r3 }
 	str r3, [r0], #4
 	add r2, r2, #1
 	b loop
