@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# check to see if qemu-system-aarch64 is installed
+installed=$(which qemu-system-aarch64)
+
+if [ $? -ne 0 ]; then
+	echo "Please install qemu-system-aarch64 first"
+	exit 1
+fi
+
 # get the required files if they dont exist here
 
 if [ ! -e kernel.img ]; then
