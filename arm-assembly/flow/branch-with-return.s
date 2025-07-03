@@ -6,7 +6,7 @@ main:
 	bge carry_on
 	bl negative_number // this is a special branch - it sets the lr register with the return address
 	b end
-	
+
 negative_number:
 	mov r5, #1
 	bx lr
