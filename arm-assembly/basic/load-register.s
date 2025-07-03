@@ -8,6 +8,6 @@ main:
 
 done:
 	svc 2
-	
+
 .data
 	vector: .word 0,1,2,3
