@@ -32,4 +32,4 @@ main:
 
 .data
 	output_string: 
-		.asciz "Command line params: num params: %d, program name %s, first param: %s\n"
+		.asciz "num params: %d, program name %s, first param: %s\n"
