@@ -1,14 +1,19 @@
 .global main
 main:
 	// save the return address from main
-  push {lr} 
+	push {lr} 
 
-	// command line: number of params
+	// in ARM32 r1 is the base-pointer
+	// to an array of pointers to strings
 
-	// first parameter - program name
+	// zero-ith parameter - program name
 	ldr r2, [ r1 ]
-	// second parameter - program parameters
+
+	// first parameter - program parameters
 	ldr r3, [ r1, #4 ]
+
+	// if have n parameters they are 
+	// accessed as r1 + (n * 4)
 
 	// we are finished accessing r1
 	// so we can prepare it for printf
